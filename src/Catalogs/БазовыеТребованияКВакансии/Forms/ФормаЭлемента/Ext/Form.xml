@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДолжностьПоШтатномуРасписанию" id="7">
+			<DataPath>Объект.ДолжностьПоШтатномуРасписанию</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДолжностьПоШтатномуРасписаниюКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДолжностьПоШтатномуРасписаниюРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ДолжностьПоШтатномуРасписаниюПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="МинимальныйСтаж" id="10">
+			<DataPath>Объект.МинимальныйСтаж</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МинимальныйСтажКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="МинимальныйСтажРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="МинимальныйСтажПриНаличииОбразования" id="13">
+			<DataPath>Объект.МинимальныйСтажПриНаличииОбразования</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МинимальныйСтажПриНаличииОбразованияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="МинимальныйСтажПриНаличииОбразованияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="МинимальнаяУченаяСтепень" id="16">
+			<DataPath>Объект.МинимальнаяУченаяСтепень</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МинимальнаяУченаяСтепеньКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="МинимальнаяУченаяСтепеньРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="МинимальноеУченоеЗвание" id="19">
+			<DataPath>1/0:b8e6f8a9-0b62-4f48-b355-214f3378f8fd</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МинимальноеУченоеЗваниеКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="МинимальноеУченоеЗваниеРасширеннаяПодсказка" id="21"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.БазовыеТребованияКВакансии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

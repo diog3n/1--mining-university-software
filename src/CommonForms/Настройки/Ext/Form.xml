@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Страницы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<Page name="ГруппаОбщиеПараметры" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа общие параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="ГруппаОбщиеПараметрыРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<InputField name="НаименованиеВУЗа" id="77">
+							<DataPath>НаборКонстант.НаименованиеВУЗа</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаименованиеВУЗаКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="НаименованиеВУЗаРасширеннаяПодсказка" id="79"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкиДокументов" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НастройкиДокументов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиДокументовРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<Pages name="СтраницыШаблонов" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы шаблонов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы шаблонов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницыШаблоновРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<Page name="ГруппаТрудовойДоговор" id="12">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Трудовой договор</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа трудовой договор</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаТрудовойДоговорРасширеннаяПодсказка" id="13"/>
+									<ChildItems>
+										<LabelDecoration name="ПараметрыТрудовогоДоговора" id="14">
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:LargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаблоны текста трудового договора</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПараметрыТрудовогоДоговораКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="ПараметрыТрудовогоДоговораРасширеннаяПодсказка" id="16"/>
+										</LabelDecoration>
+										<InputField name="ОбязанностиПреподавателя" id="1">
+											<DataPath>НаборКонстант.ОбязанностиПреподавателя</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стандартный текст с обязанностями преподавателя</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ОбязанностиПреподавателяКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="ОбязанностиПреподавателяРасширеннаяПодсказка" id="3"/>
+										</InputField>
+										<InputField name="ТрудовыеПраваПреподавателя" id="4">
+											<DataPath>НаборКонстант.ТрудовыеПраваПреподавателя</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стандартный текст с правами преподавателя</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТрудовыеПраваПреподавателяКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="ТрудовыеПраваПреподавателяРасширеннаяПодсказка" id="6"/>
+										</InputField>
+										<InputField name="ОбязанностиРаботодателя" id="7">
+											<DataPath>НаборКонстант.ОбязанностиРаботодателя</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стандартный текст с обязанностями работодателя</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ОбязанностиРаботодателяКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ОбязанностиРаботодателяРасширеннаяПодсказка" id="9"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаСогласиеНаОбработкуПД" id="24">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Согласие на обработку ПД</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа согласие на обработку ПД</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСогласиеНаОбработкуПДРасширеннаяПодсказка" id="25"/>
+									<ChildItems>
+										<LabelDecoration name="ПараметрыСогласияПД" id="33">
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:LargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаблон текста трудового договора</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПараметрыСогласияПДКонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="ПараметрыСогласияПДРасширеннаяПодсказка" id="35"/>
+										</LabelDecoration>
+										<LabelDecoration name="ТекстСогласияВступление" id="61">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Я, [ФИО, паспорт, место регистрации и т.д.] ...</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТекстСогласияВступлениеКонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="ТекстСогласияВступлениеРасширеннаяПодсказка" id="63"/>
+										</LabelDecoration>
+										<InputField name="ТекстСогласияНаОбработкуПерсональныхДанных" id="26">
+											<DataPath>НаборКонстант.ТекстСогласияНаОбработкуПерсональныхДанных</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТекстСогласияНаОбработкуПерсональныхДанныхКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ТекстСогласияНаОбработкуПерсональныхДанныхРасширеннаяПодсказка" id="28"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаКонфиденциальностьПД" id="36">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Конфиденциальность данных</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа конфиденциальность ПД</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаКонфиденциальностьПДРасширеннаяПодсказка" id="37"/>
+									<ChildItems>
+										<Pages name="СтраницыОбязательство" id="44">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы обязательство</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы обязательство</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницыОбязательствоРасширеннаяПодсказка" id="45"/>
+											<ChildItems>
+												<Page name="ГруппаТекстОбязательстваКонфПД" id="46">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Текст обязательства конф ПД</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа текст обязательства конф ПД</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаТекстОбязательстваКонфПДРасширеннаяПодсказка" id="47"/>
+													<ChildItems>
+														<LabelDecoration name="ШаблонТекстаОбязательства" id="41">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>51</MaxWidth>
+															<TextColor>style:AccentColor</TextColor>
+															<Font ref="style:LargeTextFont" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Шаблон текста обязательства соблюдения режима конфиденциальности персональных данных студентов и сотрудников</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ШаблонТекстаОбязательстваКонтекстноеМеню" id="42"/>
+															<ExtendedTooltip name="ШаблонТекстаОбязательстваРасширеннаяПодсказка" id="43"/>
+														</LabelDecoration>
+														<LabelDecoration name="ТекстОбязательстваВступление" id="64">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Я, [ФИО, паспорт, место регистрации и т.д.] ...</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ТекстОбязательстваВступлениеКонтекстноеМеню" id="65"/>
+															<ExtendedTooltip name="ТекстОбязательстваВступлениеРасширеннаяПодсказка" id="66"/>
+														</LabelDecoration>
+														<InputField name="ТекстОбязательстваКонфПД" id="38">
+															<DataPath>НаборКонстант.ТекстОбязательстваКонфПД</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MultiLine>true</MultiLine>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ТекстОбязательстваКонфПДКонтекстноеМеню" id="39"/>
+															<ExtendedTooltip name="ТекстОбязательстваКонфПДРасширеннаяПодсказка" id="40"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="ГруппаТекстПоложенияКонфПД" id="48">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Текст положения о защите КД</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа текст положения конф ПД</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаТекстПоложенияКонфПДРасширеннаяПодсказка" id="49"/>
+													<ChildItems>
+														<LabelDecoration name="ШаблонТекстаПоложенияКонфПД" id="53">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>51</MaxWidth>
+															<TextColor>style:AccentColor</TextColor>
+															<Font ref="style:LargeTextFont" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Шаблон текста положения о защите конфиденциальных данных</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ШаблонТекстаПоложенияКонфПДКонтекстноеМеню" id="54"/>
+															<ExtendedTooltip name="ШаблонТекстаПоложенияКонфПДРасширеннаяПодсказка" id="55"/>
+														</LabelDecoration>
+														<InputField name="ТекстПоложенияОЗащитеПД" id="50">
+															<DataPath>НаборКонстант.ТекстПоложенияОЗащитеПД</DataPath>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MultiLine>true</MultiLine>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ТекстПоложенияОЗащитеПДКонтекстноеМеню" id="51"/>
+															<ExtendedTooltip name="ТекстПоложенияОЗащитеПДРасширеннаяПодсказка" id="52"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаАкадемическаяЭтика" id="56">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Академическая этика</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа академическая этика</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<ExtendedTooltip name="ГруппаАкадемическаяЭтикаРасширеннаяПодсказка" id="57"/>
+									<ChildItems>
+										<InputField name="СсылкаНаАкадемическуюЭтику" id="58">
+											<DataPath>НаборКонстант.СсылкаНаАкадемическуюЭтику</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СсылкаНаАкадемическуюЭтикуКонтекстноеМеню" id="59"/>
+											<ExtendedTooltip name="СсылкаНаАкадемическуюЭтикуРасширеннаяПодсказка" id="60"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаДолжностнаяИнструкция" id="67">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Должностная инструкция</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа должностная инструкция</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаДолжностнаяИнструкцияРасширеннаяПодсказка" id="68"/>
+									<ChildItems>
+										<LabelDecoration name="ШаблонТекстаДолжностнойИнстр" id="72">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>51</MaxWidth>
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:LargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаблон текста должностной инструкции</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ШаблонТекстаДолжностнойИнстрКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="ШаблонТекстаДолжностнойИнстрРасширеннаяПодсказка" id="74"/>
+										</LabelDecoration>
+										<InputField name="ТекстДолжностнаяИнструкция" id="69">
+											<DataPath>НаборКонстант.ТекстДолжностнаяИнструкция</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текст должностной инструкции</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТекстДолжностнаяИнструкцияКонтекстноеМеню" id="70"/>
+											<ExtendedTooltip name="ТекстДолжностнаяИнструкцияРасширеннаяПодсказка" id="71"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПараметрыЗаписиДокументов" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры записи документов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа параметры записи документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="ГруппаПараметрыЗаписиДокументовРасширеннаяПодсказка" id="20"/>
+					<ChildItems>
+						<CheckBoxField name="ЗапретНаРедактированиеДокументов" id="21">
+							<DataPath>НаборКонстант.ЗапретНаРедактированиеДокументов</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗапретНаРедактированиеДокументовКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ЗапретНаРедактированиеДокументовРасширеннаяПодсказка" id="23"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

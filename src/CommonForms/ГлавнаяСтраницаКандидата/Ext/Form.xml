@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<PictureDecoration name="ДекорацияГерб" id="6">
+			<Width>9</Width>
+			<Height>5</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<MaxHeight>10</MaxHeight>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декорация герб</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ГербГорного</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="ДекорацияГербКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ДекорацияГербРасширеннаяПодсказка" id="8"/>
+		</PictureDecoration>
+		<LabelDecoration name="ДекорацияНадпись1" id="12">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Font ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Санкт-Петербургский Горный Университет императрицы Екатерины II</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<ContextMenu name="ДекорацияНадпись1КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="ДекорацияНадпись1РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияНадпись2" id="9">
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Font ref="style:NormalTextFont" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конкурс на замещение должностей</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<ContextMenu name="ДекорацияНадпись2КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ДекорацияНадпись2РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+		<Button name="КнопкаПодатьЗаявку" id="4">
+			<Type>UsualButton</Type>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<CommandName>Form.Command.КнопкаПодатьЗаявку</CommandName>
+			<BackColor>style:ActivityColor</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ExtendedTooltip name="КнопкаПодатьЗаявкуРасширеннаяПодсказка" id="5"/>
+		</Button>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="КнопкаПодатьЗаявку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подать заявку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка подать заявку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаПодатьЗаявку</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Enum uuid="64d3d98d-3d91-42e2-8709-b1dd2523f594">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СписокНаучныхТрудовКатегорияИздания" category="Ref">
+				<xr:TypeId>c2067876-9a8d-41e8-bfc9-b5bfa4696cbc</xr:TypeId>
+				<xr:ValueId>ea8e03db-22f5-4823-9bb0-1de3af3a9896</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СписокНаучныхТрудовКатегорияИздания" category="Manager">
+				<xr:TypeId>691b4ad1-fd96-46b0-b5b2-79997bd857fb</xr:TypeId>
+				<xr:ValueId>60bcc10a-757c-4b8a-afe3-96adb6a8b451</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СписокНаучныхТрудовКатегорияИздания" category="List">
+				<xr:TypeId>ae6f3ef4-97e1-474f-8db8-3610e101d172</xr:TypeId>
+				<xr:ValueId>78f5bde3-b0c8-47ab-8b8c-857c1b97f3bb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СписокНаучныхТрудовКатегорияИздания</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список научных трудов категория издания</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="65d73fe5-3d51-41fe-8c41-1b6470fd3881">
+				<Properties>
+					<Name>СтатьяВНаучномИздании</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья в научном издании</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f7af8804-496b-4e81-8c5a-fe11945c9e22">
+				<Properties>
+					<Name>ПатентНаИзобретение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Патент на изобретение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3ddfafc9-c871-4aa3-8a2a-f26202c308ad">
+				<Properties>
+					<Name>УчебноеПособие</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учебное пособие</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d643a4bb-c580-497b-8ad8-bc0fe1649e32">
+				<Properties>
+					<Name>УчебноМетодическоеИздание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учебно-методическое издание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f7e085c2-b751-4acc-8e6f-046c68a6e288">
+				<Properties>
+					<Name>МонографияИлиГлаваВМонографии</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Монография или глава в монографии</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9fb11d37-87da-46d6-b5ea-ddf99f62e4aa">
+				<Properties>
+					<Name>ПубликацияВМатериалахНаучныхМероприятий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Публикация в материалах научных мероприятий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3af46143-e631-4b26-b911-7740eac21de6">
+				<Properties>
+					<Name>Препринт</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Препринт</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

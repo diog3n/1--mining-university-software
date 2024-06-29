@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКнопкаПодписатьИЗакрыть" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаПодписатьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаПодписатьИЗакрытьРасширеннаяПодсказка" id="28"/>
+			</Button>
+			<Button name="ФормаКнопкаПодписать" id="29">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаПодписать</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаПодписатьРасширеннаяПодсказка" id="30"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Утвердил" id="10">
+			<DataPath>1/0:d5465d7f-dccb-4b62-bf40-8d8cec87bd09</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="УтвердилКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="УтвердилРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Подписант" id="7">
+			<DataPath>Объект.Подписант</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<DropListButton>false</DropListButton>
+			<OpenButton>false</OpenButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПодписантКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодписантРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ПодписантПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Должность" id="24">
+			<DataPath>Объект.Подписант.Должность</DataPath>
+			<DropListButton>false</DropListButton>
+			<OpenButton>false</OpenButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДолжностьКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="26"/>
+			<Events>
+				<Event name="OnChange">ДолжностьПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаПоложенияДолжностнойИнструкции" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должностная инструкция</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="14" kind="StyleItem" scale="100"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа положения должностной инструкции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаПоложенияДолжностнойИнструкцииРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияНазваниеВУЗа" id="21">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>80</MaxWidth>
+					<TextColor>style:AccentColor</TextColor>
+					<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НазваниеВУЗа</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияНазваниеВУЗаКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ДекорацияНазваниеВУЗаРасширеннаяПодсказка" id="23"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияТекстДИ" id="18">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>80</MaxWidth>
+					<TextColor>#484848</TextColor>
+					<Font ref="style:NormalTextFont" height="11" kind="StyleItem" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация текст ДИ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияТекстДИКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ДекорацияТекстДИРасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ТекстДолжностнойИнструкции" id="13">
+			<DataPath>Объект.ТекстДолжностнойИнструкции</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТекстДолжностнойИнструкцииКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТекстДолжностнойИнструкцииРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ДолжностнаяИнструкция</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаПодписатьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка подписать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаПодписатьИЗакрыть</Action>
+		</Command>
+		<Command name="КнопкаПодписать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка подписать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаПодписать</Action>
+		</Command>
+	</Commands>
+</Form>

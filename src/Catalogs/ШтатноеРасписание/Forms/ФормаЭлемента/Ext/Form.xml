@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Page name="ГруппаДолжность" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки должности</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа должность</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="ГруппаДолжностьРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<LabelDecoration name="ПараметрыДолжности" id="40">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>51</MaxWidth>
+							<TextColor>style:AccentColor</TextColor>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры должности</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПараметрыДолжностиКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ПараметрыДолжностиРасширеннаяПодсказка" id="42"/>
+						</LabelDecoration>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<Visible>false</Visible>
+							<Enabled>false</Enabled>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ТипДолжности" id="7">
+							<DataPath>Объект.ТипДолжности</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипДолжностиКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ТипДолжностиРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Кафедра" id="10">
+							<DataPath>Объект.Кафедра</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КафедраКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="КафедраРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="НомерПГК" id="21">
+							<DataPath>Объект.НомерПКГ</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НомерПГККонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НомерПГКРасширеннаяПодсказка" id="23"/>
+						</InputField>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<UsualGroup name="ГруппаОкладСтавка" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа оклад ставка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа оклад ставка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОкладСтавкаРасширеннаяПодсказка" id="25"/>
+							<ChildItems>
+								<InputField name="Оклад" id="18">
+									<DataPath>Объект.Оклад</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОкладКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ОкладРасширеннаяПодсказка" id="20"/>
+								</InputField>
+								<InputField name="ДоляСтавки" id="15">
+									<DataPath>Объект.ДоляСтавки</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДоляСтавкиКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ДоляСтавкиРасширеннаяПодсказка" id="17"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДолжностнаяИнструкция" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должностная инструкция</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа должностная инструкция</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДолжностнаяИнструкцияРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<LabelDecoration name="ЗаголовокТекстДолжностнойИнструкции" id="37">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>51</MaxWidth>
+							<TextColor>style:AccentColor</TextColor>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст должностной инструкции</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗаголовокТекстДолжностнойИнструкцииКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ЗаголовокТекстДолжностнойИнструкцииРасширеннаяПодсказка" id="39"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьСтандартнымТекстом" id="35">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьСтандартнымТекстом</CommandName>
+							<BackColor>style:ActivityColor</BackColor>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заполнить текстом
+из шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗаполнитьСтандартнымТекстомРасширеннаяПодсказка" id="36"/>
+						</Button>
+						<InputField name="ДолжностнаяИнструкция" id="26">
+							<DataPath>Объект.ДолжностнаяИнструкция</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>80</MaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДолжностнаяИнструкцияКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ДолжностнаяИнструкцияРасширеннаяПодсказка" id="28"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ШтатноеРасписание</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьСтандартнымТекстом" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить стандартным текстом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить стандартным текстом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСтандартнымТекстом</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="СообщенияЗакрыть" id="26">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаЗакрыть</CommandName>
+				<TextColor>style:ButtonBackColor</TextColor>
+				<BackColor>#AA0000</BackColor>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+				<ExtendedTooltip name="СообщенияЗакрытьРасширеннаяПодсказка" id="27"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Сообщения" id="1">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Сообщения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СообщенияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СообщенияКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СообщенияРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СообщенияСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Сообщения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СообщенияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СообщенияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СообщенияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Сообщения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СообщенияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СообщенияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СообщенияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Сообщения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СообщенияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СообщенияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СообщенияНомерСтроки" id="14">
+					<DataPath>Объект.Сообщения.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СообщенияНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СообщенияНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="СообщенияИмяПользователя" id="17">
+					<DataPath>Объект.Сообщения.ИмяПользователя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СообщенияИмяПользователяКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СообщенияИмяПользователяРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="СообщенияВремя" id="32">
+					<DataPath>Объект.Сообщения.Время</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СообщенияВремяКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СообщенияВремяРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СообщенияСообщение" id="20">
+					<DataPath>Объект.Сообщения.Сообщение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СообщенияСообщениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СообщенияСообщениеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="ПолеСообщения" id="23">
+			<DataPath>ПолеСообщения</DataPath>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПолеСообщенияКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ПолеСообщенияРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<UsualGroup name="ГруппаКнопки" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<Button name="СообщенияОтправить" id="28">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КнопкаОтправить</CommandName>
+					<TextColor>style:ButtonBackColor</TextColor>
+					<BackColor>style:ImportantColor</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="СообщенияОтправитьРасширеннаяПодсказка" id="29"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сессии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеСообщения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаОтправить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка отправить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаОтправить</Action>
+		</Command>
+		<Command name="КнопкаЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

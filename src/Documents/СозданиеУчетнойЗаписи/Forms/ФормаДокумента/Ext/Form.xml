@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКнопкаСоздатьИЗакрыть" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаСоздатьИЗакрыть</CommandName>
+				<TextColor>style:FormBackColor</TextColor>
+				<BackColor>style:ImportantColor</BackColor>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+				<ExtendedTooltip name="ФормаКнопкаСоздатьИЗакрытьРасширеннаяПодсказка" id="13"/>
+			</Button>
+			<Button name="ФормаКнопкаСоздать" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаСоздать</CommandName>
+				<BackColor>style:ActivityColor</BackColor>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+				<ExtendedTooltip name="ФормаКнопкаСоздатьРасширеннаяПодсказка" id="11"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Заявка" id="14">
+			<DataPath>Объект.Заявка</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<OpenButton>false</OpenButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗаявкаКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="16"/>
+		</InputField>
+		<InputField name="ЗаявкаПолноеИмя" id="17">
+			<DataPath>Объект.Заявка.ПолноеИмя</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗаявкаПолноеИмяКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ЗаявкаПолноеИмяРасширеннаяПодсказка" id="19"/>
+		</InputField>
+		<InputField name="ИмяПользователя" id="1">
+			<DataPath>Объект.ИмяПользователя</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПолноеИмя" id="4">
+			<DataPath>1/0:980f5f4b-124a-440f-92e5-e2d58376f0ec</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПолноеИмяКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПолноеИмяРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Пароль" id="7">
+			<DataPath>Объект.Пароль</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПарольКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СозданиеУчетнойЗаписи</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаСоздатьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка создать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаСоздатьИЗакрыть</Action>
+		</Command>
+		<Command name="КнопкаСоздать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка создать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаСоздать</Action>
+		</Command>
+	</Commands>
+</Form>

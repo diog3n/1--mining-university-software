@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WorkingAreaTemplate>TwoColumnsEqualWidth</WorkingAreaTemplate>
+	<LeftColumn>
+		<Item>
+			<Form>CommonForm.ГлавнаяСтраницаСотрудника</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Сотрудник">false</xr:Value>
+				<xr:Value name="Role.Кандидат">false</xr:Value>
+				<xr:Value name="Role.ОтделКадров">true</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Catalog.Сотрудники.Form.ФормаСписка</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
+				<xr:Value name="Role.Сотрудник">false</xr:Value>
+				<xr:Value name="Role.Кандидат">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>CommonForm.ГлавнаяСтраницаПреподавателя</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
+				<xr:Value name="Role.Кандидат">false</xr:Value>
+				<xr:Value name="Role.ОтделКадров">false</xr:Value>
+			</Visibility>
+		</Item>
+	</LeftColumn>
+	<RightColumn>
+		<Item>
+			<Form>Document.СозданиеУчетнойЗаписи.Form.ФормаСписка</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Сотрудник">false</xr:Value>
+				<xr:Value name="Role.Кандидат">false</xr:Value>
+				<xr:Value name="Role.ОтделКадров">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Document.Авторекомендация.Form.ФормаСписка</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
+				<xr:Value name="Role.Сотрудник">false</xr:Value>
+				<xr:Value name="Role.Кандидат">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>CommonForm.ГлавнаяСтраницаКандидата</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
+				<xr:Value name="Role.Сотрудник">false</xr:Value>
+				<xr:Value name="Role.ОтделКадров">false</xr:Value>
+			</Visibility>
+		</Item>
+	</RightColumn>
+</HomePageWorkArea>
